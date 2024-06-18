@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('./Images/to-do-list-background.jpg');
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.wrapper{
+    background-color: rgb(162, 164, 168);
+    width:70%;
+    max-width: 800px;
+    margin:auto;
+    z-index: 2;
+    opacity:0.8;
+    border-radius: 20px;
+}
+
+.heading{
+    width:60%;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 2rem;
+    
+}
+.heading-child{
+        font-size:5rem;
+}
+
+.input-container {
+    max-width:45rem;
+    margin:auto;
+
+}
+
+.first-child{
+    margin-left:90px;
+}
+
+.second-child{
+    margin-right:90px;
+}
+
+.icon{
+    height: 3.35rem;
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+
+.btn-container{
+    position: relative;
+
+}
+
+.btn-child{
+    text-transform: capitalize;
+    margin-left:43%;
+    margin-bottom: 30px;
+    margin-top:3%;
+
+}
+/* min-width> width then it can control how it should appear on the view port and is more responsive than width property. */
+
+.complete{
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+}
+/* design todo list */
+
+.todoListWrapper{
+
+    background-color: lightgray;
+    border-radius:15px;
+    
+}
+
+.todoListWrapper .itemInput{
+    width:100%;
+}

@@ -5,13 +5,8 @@ import '../App.css';
 export default function TodoItem({listdata,toggleComplete, handleDelete,findSingleValue}) {
 
 
-
-  
   const listedItems= listdata.map((list)=>{
     return(
-
-
-      
     <div className="container border border-dark w-90  mb-3"key={list.id}>
 
 

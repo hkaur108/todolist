@@ -7,24 +7,29 @@
 body{
     background-image: url('./Images/to-do-list-background.jpg');
     object-fit: cover;
-    object-position: center;
+    /* object-position: center; */
+    background-repeat: no-repeat;
+    background-position: center;
     
 }
 
 .wrapper{
     background-color: rgb(162, 164, 168);
-    width:70%;
-    max-width: 800px;
+    width:40%;
+    max-width: 700px;
     margin:auto;
     z-index: 2;
     opacity:0.8;
     border-radius: 20px;
+    padding: 0 10px 0 10px;
+    box-shadow: 0px 0px 5px 5px #b3aeae;
+
 }
 
 .heading{
     width:60%;
     border-radius: 10px;
-    margin: auto;
+    margin:auto ;
     font-size: 2rem;
     
 }
@@ -33,7 +38,8 @@ body{
 }
 
 .input-container {
-    max-width:45rem;
+   width:600px;
+   height:65px;
     margin:auto;
 
 }
@@ -71,6 +77,7 @@ body{
 .complete{
     text-decoration-line: line-through;
     text-decoration-color: red;
+    text-decoration-thickness: 3px;
 }
 /* design todo list */
 
@@ -83,4 +90,14 @@ body{
 
 .todoListWrapper .itemInput{
     width:100%;
+}
+
+
+.h{
+    height:50px;
+}
+
+.paraline{
+    height: 50px;
+    line-height: 50px;
 }

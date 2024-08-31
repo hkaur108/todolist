@@ -7,23 +7,19 @@ export default function TodoItem({listdata,toggleComplete, handleDelete,findSing
 
   const listedItems= listdata.map((list)=>{
     return(
-    <div className="container border border-dark w-90  mb-3"key={list.id}>
-
-
-
-
+    <div className="container w-80 mb-2" key={list.id}>
   <div className="row border border-dark align-items-center bg-secondary text-light" >
-    <div className="col-1  ">
-      <input className=''   type="checkbox" onClick={()=>toggleComplete(list.id)} />
+    <div className="col-1">
+      <input type="checkbox" onClick={()=>toggleComplete(list.id)} />
     </div>
-    <div className="col-9 font-weight-bold "> 
-      <p className = {`${list.isCompleted ? 'complete':""}`} >{list.todo}</p>
+    <div className="col-9 font-weight-bold paraline"> 
+      <p className = {`${list.isCompleted ? 'complete paraline':"paraline"}`} >{list.todo}</p>
     </div>
-    <div className="col-1 ">
+    <div className="col-1 p-1">
       <EditIcon onClick ={()=>findSingleValue(list.id)} />
     </div>
 
-    <div className="col-1">
+    <div className="col-1 p-1">
       <DeleteIcon onClick={()=>handleDelete(list.id)}/>
     </div>
 

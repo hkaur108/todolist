@@ -68,10 +68,6 @@ export default function TodoInput() {
                 item.id===id 
             )
         })
-
-        // console.log(listdata)
-        // console.log(singleVal)
-        
     setvalue(singleVal.todo)
     
 
@@ -87,14 +83,14 @@ export default function TodoInput() {
 
 return (
     <>
-    <div className='wrapper border border-dark mt-3 w-100'>
+    <div className='wrapper py-1 mt-3 w-100'>
     
     
     {/* header formatting */}
-     <div className='d-flex   mx-auto mt-5 p-3 '>
+     <div className='mt-2 p-2 '>
         {/* first child */}
-        <div className=' heading text-light px-5 py-1 justify-center text-capitalize text-center align-self-center '> 
-        <h3 className='font-weight-bold display-5 font-weight-bold'>todo list </h3>
+        <div className=' heading px-5 py-1 justify-center text-capitalize align-self-center '> 
+        <h3 className='text-light fw-bold font-weight-bold display-6 font-weight-bold text-center text-decoration-underline fst-italic'>todo list </h3>
         </div>
     </div>
 
@@ -107,9 +103,9 @@ return (
         <div className="input-group-prepend my-auto">
     <span className="input-group-text bg-primary text-light icon"><LibraryBooksIcon/></span>
   </div>
-        <input type="text" className="form-control text-capitalize mx-auto font-size-2rem" value={value} onChange={(e)=>setvalue(e.target.value)} placeholder="Enter your todo"/>
+        <input type="text" className="form-control text-capitalize mx-auto font-size-2rem " style={{boxShadow:"none", outline:"none"}} value={value} onChange={(e)=>setvalue(e.target.value)} placeholder="Enter your todo"/>
         <div className="input-group-append">
-            <span className="input-group-text"><button className='btn btn-primary ' type='click' onClick={handleClick}>+</button></span>
+            <span className="input-group-text h-100"><button className='btn btn-primary' style={{outline:'none'}} type='click' onClick={handleClick}>+</button></span>
         </div>
     </div>
 
